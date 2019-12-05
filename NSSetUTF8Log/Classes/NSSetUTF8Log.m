@@ -6,6 +6,7 @@
 //
 
 #import "NSSetUTF8Log.h"
+#import <objc/runtime.h>
 
 static void exchangeInstanceMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 {
