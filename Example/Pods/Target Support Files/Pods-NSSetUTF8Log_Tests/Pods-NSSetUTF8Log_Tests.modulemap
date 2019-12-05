@@ -1,0 +1,6 @@
+framework module Pods_NSSetUTF8Log_Tests {
+  umbrella header "Pods-NSSetUTF8Log_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

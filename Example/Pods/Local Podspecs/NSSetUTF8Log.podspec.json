@@ -1,0 +1,34 @@
+{
+  "name": "NSSetUTF8Log",
+  "version": "0.1.0",
+  "summary": "A short description of NSSetUTF8Log.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/oovsxx@163.com/NSSetUTF8Log",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "oovsxx@163.com": "aiweichujian@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/oovsxx@163.com/NSSetUTF8Log.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "default_subspecs": "Core",
+  "dependencies": {
+    "AFNetworking/NSURLSession": [
+      "~> 3.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "NSSetUTF8Log/Classes/Core/**/*",
+      "public_header_files": "NSSetUTF8Log/Classes/Core/**/*.h"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module NSSetUTF8Log {
+  umbrella header "NSSetUTF8Log-umbrella.h"
+
+  export *
+  module * { export * }
+}

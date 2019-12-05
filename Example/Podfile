@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios,  '10.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'NSSetUTF8Log_Example' do
+  pod 'NSSetUTF8Log', :path => '../'
+  pod 'XMNetworking'
+  pod 'ZFPlayer', '~> 3.0'
+
+  target 'NSSetUTF8Log_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

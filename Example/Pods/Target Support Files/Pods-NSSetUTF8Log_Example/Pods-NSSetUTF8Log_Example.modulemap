@@ -1,0 +1,6 @@
+framework module Pods_NSSetUTF8Log_Example {
+  umbrella header "Pods-NSSetUTF8Log_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
