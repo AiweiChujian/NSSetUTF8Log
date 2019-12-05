@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "NSSetUTF8Log.h"
+#import "ViewController.h"
 
 FOUNDATION_EXPORT double NSSetUTF8LogVersionNumber;
 FOUNDATION_EXPORT const unsigned char NSSetUTF8LogVersionString[];

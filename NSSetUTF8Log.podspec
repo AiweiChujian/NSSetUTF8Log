@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'NSSetUTF8Log/Classes/**/*'
+  s.requires_arc = true
   
 #  s.default_subspec = 'Core'
 #
