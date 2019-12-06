@@ -5,25 +5,26 @@
 [![License](https://img.shields.io/cocoapods/l/NSSetUTF8Log.svg?style=flat)](https://cocoapods.org/pods/NSSetUTF8Log)
 [![Platform](https://img.shields.io/cocoapods/p/NSSetUTF8Log.svg?style=flat)](https://cocoapods.org/pods/NSSetUTF8Log)
 
-## Example
+NSSetUTF8Log是一款小工具，通过hook原本的description方法，支持NSDictionary、NSArray和NSSet在Xcode控制台中打印时输出中文(UTF8)字符，使用时将源文件加入工程即可，不需要import，也不需要额外的代码。
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## 安装说明
 
-## Requirements
-
-## Installation
-
-NSSetUTF8Log is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+NSSetUTF8Log支持通过 [CocoaPods](https://cocoapods.org) 安装，相关代码只在Debug环境下才被编译，推荐只在Debug环境中使用：
 
 ```ruby
-pod 'NSSetUTF8Log'
+pod 'NSSetUTF8Log' :configurations => ['Debug']
 ```
 
-## Author
+## 使用示例
 
-oovsxx@163.com, aiweichujian@gmail.com
+示例工程在运行前需在  Example 文件夹下先执行`pod install`。**如果NSDictionary和NSArray是Json对象，会在打印时按Json格式输出。**
 
-## License
+支持NSLog时的输出：
+![](ScreenShots/NSLog.png)
 
-NSSetUTF8Log is available under the MIT license. See the LICENSE file for more info.
+也支持断点调试时的打印：
+![](ScreenShots/Debug.png)
+
+## 许可协议
+
+NSSetUTF8Log 支持 MIT 许可协议，详情见 LICENSE 文件。

@@ -17,7 +17,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSDictionary *student1 = @{@"姓名":@"小明",@"性别":@"男",@"年龄":@"14"};
+    NSDictionary *student2 = @{@"姓名":@"小红",@"性别":@"女",@"年龄":@"13"};
+    NSLog(@"\nstudent1:%@",student1);
+    
+    NSSet *studentSet = [NSSet setWithObjects:student1,student2, nil];
+    
+    NSLog(@"\nsudentSet:%@",studentSet);
+    
+    NSDictionary *class = @{@"班级名称":@"2019级2班",
+                            @"学生":studentSet.allObjects,
+                            };
+    NSLog(@"\nclass:%@",class);
 }
 
 - (void)didReceiveMemoryWarning

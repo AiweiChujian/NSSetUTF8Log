@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NSSetUTF8Log'
   s.version          = '0.1.0'
-  s.summary          = '集合类型在控制台中打印中文(UTF8)'
+  s.summary          = '集合类型在控制台中打印中文(UTF8)字符'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'OC中集合数据类型在Xcode控制台中打印中文(UTF8)' \
-                       '将源文件加入工程即可,不需要导入,也不需要额外的代码'
+  s.description      = 'OC中集合数据类型在Xcode控制台中打印中文(UTF8)字符' \
+                       '将源文件加入工程即可,不需要import,也不需要额外的代码'
 
   s.homepage         = 'https://github.com/AiweiChujian/NSSetUTF8Log.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

@@ -10,6 +10,10 @@
 
 @interface Tests : XCTestCase
 
+@property (nonatomic, strong)NSSet *studentSet;
+
+@property (nonatomic, strong)NSRegularExpression *rx;
+
 @end
 
 @implementation Tests
@@ -17,7 +21,11 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    NSDictionary *student1 = @{@"姓名":@"小明",@"性别":@"男",@"年龄":@"14"};
+    NSDictionary *student2 = @{@"姓名":@"小红",@"性别":@"女",@"年龄":@"13"};
+    
+    self.studentSet = [NSSet setWithObjects:student1,student2, nil];
+    self.rx = [[NSRegularExpression alloc]initWithPattern:@"\\\\?\\\\[uU]\\w{4}" options:0 error:nil];
 }
 
 - (void)tearDown
@@ -26,10 +34,28 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testArrayLog
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSString *arrayDes = _studentSet.allObjects.description;
+    NSArray *arrayDesMatches = [_rx matchesInString:arrayDes options:0 range:NSMakeRange(0, arrayDes.length)];
+    NSAssert(arrayDesMatches.count == 0, @"NSArray中有未转换字段");
 }
 
+- (void)testSetLog
+{
+    NSString *setDes = _studentSet.description;
+       NSArray *setDesMatches = [_rx matchesInString:setDes options:0 range:NSMakeRange(0, setDes.length)];
+    NSAssert(setDesMatches.count == 0, @"NSSet中有未转换字段");
+}
+
+- (void)testDicLog
+{
+    NSDictionary *classes = @{@"班级名称":@"2019级2班",
+                              @"学生":_studentSet.allObjects,
+                             };
+    NSString *dicDes = classes.description;
+    NSArray *dicDesMatches = [_rx matchesInString:dicDes options:0 range:NSMakeRange(0, dicDes.length)];
+    NSAssert(dicDesMatches.count == 0, @"NSDictionary中有未转换字段");
+}
 @end
 
