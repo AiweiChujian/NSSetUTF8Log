@@ -20,9 +20,11 @@ pod 'NSSetUTF8Log' :configurations => ['Debug']
 示例工程在运行前需在  Example 文件夹下先执行`pod install`。**如果NSDictionary和NSArray是Json对象，会在打印时按Json格式输出。**
 
 支持NSLog时的输出：
+
 ![](ScreenShots/NSLog.png)
 
-也支持断点调试时的打印：
+也支持断点调试时的打印：  
+
 ![](ScreenShots/Debug.png)
 
 ## 许可协议
