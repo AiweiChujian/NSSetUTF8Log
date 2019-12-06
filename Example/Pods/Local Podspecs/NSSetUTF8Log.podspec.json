@@ -1,8 +1,8 @@
 {
   "name": "NSSetUTF8Log",
   "version": "0.1.0",
-  "summary": "集合类型在控制台中打印中文(UTF8)",
-  "description": "OC中集合数据类型在Xcode控制台中打印中文(UTF8)将源文件加入工程即可,不需要导入,也不需要额外的代码",
+  "summary": "集合类型在控制台中打印中文(UTF8)字符",
+  "description": "OC中集合数据类型在Xcode控制台中打印中文(UTF8)字符将源文件加入工程即可,不需要import,也不需要额外的代码",
   "homepage": "https://github.com/AiweiChujian/NSSetUTF8Log.git",
   "license": {
     "type": "MIT",
