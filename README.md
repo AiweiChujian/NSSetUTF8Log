@@ -1,6 +1,6 @@
 # NSSetUTF8Log
 
-[![CI Status](https://img.shields.io/travis/oovsxx@163.com/NSSetUTF8Log.svg?style=flat)](https://travis-ci.org/oovsxx@163.com/NSSetUTF8Log)
+[![CI Status](https://img.shields.io/travis/hellohezhili@gmail.com/NSSetUTF8Log.svg?style=flat)](https://travis-ci.org/hellohezhili@gmail.com/NSSetUTF8Log)
 [![Version](https://img.shields.io/cocoapods/v/NSSetUTF8Log.svg?style=flat)](https://cocoapods.org/pods/NSSetUTF8Log)
 [![License](https://img.shields.io/cocoapods/l/NSSetUTF8Log.svg?style=flat)](https://cocoapods.org/pods/NSSetUTF8Log)
 [![Platform](https://img.shields.io/cocoapods/p/NSSetUTF8Log.svg?style=flat)](https://cocoapods.org/pods/NSSetUTF8Log)
