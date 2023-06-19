@@ -1,8 +1,21 @@
-# OS X
-.DS_Store
+syntax: glob
 
 # Xcode
+*.xcuserstate
+project.xcworkspace
+xcuserdata
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+xcshareddata/
+UserInterface.xcuserstate
+contents.xcworkspacedata
+
+## Build generated
 build/
+DerivedData/
+
+## Various settings
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -11,27 +24,39 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
+
+## Obj-C/Swift specific
+.DS_Store
+*/.DS_Store
 *.hmap
 *.ipa
+*.dSYM.zip
+*.dSYM
 
-# Bundler
-.bundle
+# Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+.idea/
+*.swp
+.hg/
+\.hg
+.hgignore/
+\.hgignore
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
 
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+
+# Carthage
 Carthage/Build
 
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
+# fastlane
+fastlane/report.xml
+fastlane/screenshots
